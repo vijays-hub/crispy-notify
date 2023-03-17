@@ -1,8 +1,8 @@
-import { toastTypeColorCodeMap } from "./constant.js";
+import { IMAGE_ASSETS_PATH, toastTypeColorCodeMap } from "./constant.js";
 
 const getToastContent = ({ type, title, message }) => `
 <div class="toast_content" style="border-left: 3px solid ${toastTypeColorCodeMap[type]}">
-    <img src="assets/images/${type}.png" alt="" class="toast_type_asset" />
+    <img src="${IMAGE_ASSETS_PATH}/${type}.png" alt="" class="toast_type_asset" />
     <div class="toast_text">
         <h4>${title}</h4>
         <p>${message}</p>

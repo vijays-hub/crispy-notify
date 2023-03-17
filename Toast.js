@@ -3,6 +3,7 @@ import {
   DEFAULT_CONFIG,
   ACCEPTED_TOAST_POSITIONS,
   toastTypeColorCodeMap,
+  AUDIO_ASSETS_PATH,
 } from "./constant.js";
 import { createToastContainer, getToastContent } from "./utils.js";
 
@@ -19,6 +20,7 @@ export default class Toast {
   #pause;
   #visibilityChange;
   #shouldResume;
+  #shouldPlaySound;
 
   // Ref for options: https://fkhadra.github.io/react-toastify/api/toast/
   constructor(options) {
@@ -173,6 +175,20 @@ export default class Toast {
       document.removeEventListener("visibilitychange", this.#visibilityChange);
     }
   }
+
+  set playNotificationSound(shouldPlayNotificationSound) {
+    if (!shouldPlayNotificationSound) return;
+
+    this.#shouldPlaySound = true;
+
+    const notificationSoundEffect = new Audio(
+      `${AUDIO_ASSETS_PATH}/${Object.keys(ACCEPTED_TOAST_TYPES).find(
+        (type) => type === this.#toastType
+      )}.mp3`
+    );
+
+    notificationSoundEffect.play();
+  }
   //   Setters ---> END
 
   //   UTIL FUNCTIONS --> START
@@ -192,6 +208,11 @@ export default class Toast {
       if (container == null || container.hasChildNodes()) return;
       container.remove();
     });
+
+    if (this.#shouldPlaySound) {
+      const closeSoundEffect = new Audio(`${AUDIO_ASSETS_PATH}/close.mp3`);
+      closeSoundEffect.play();
+    }
 
     // Call the onClose hook.
     this.onClose();

@@ -31,6 +31,7 @@ const DEFAULT_CONFIG = {
   showProgressBar: true,
   pauseOnHover: true,
   pauseOnFocusLoss: true,
+  playNotificationSound: false,
   toastContent: {
     message: "Toast title",
     title: "Toast message",
@@ -38,9 +39,14 @@ const DEFAULT_CONFIG = {
   },
 };
 
+const AUDIO_ASSETS_PATH = "assets/notification_sounds";
+const IMAGE_ASSETS_PATH = "assets/images";
+
 export {
   ACCEPTED_TOAST_POSITIONS,
   ACCEPTED_TOAST_TYPES,
   toastTypeColorCodeMap,
   DEFAULT_CONFIG,
+  AUDIO_ASSETS_PATH,
+  IMAGE_ASSETS_PATH,
 };
