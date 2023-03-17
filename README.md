@@ -2,6 +2,7 @@
 
 A toast notification web app (potentially a library) that's inspired from [React-Toastify](https://github.com/fkhadra/react-toastify). 
 <br>
+<br>
 **👨‍💻 Coded in pure JavaScript 💻**.
 
 ## Watchu got? 🧐🤔
