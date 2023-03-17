@@ -19,6 +19,7 @@ A toast notification web app (potentially a library) that's inspired from [React
 - 🗑️ remove a toast on click.
 - 🔔 Play a notification sound when closing the toast.
 - 🎣 provide an onClose hook to do something once the toast is dismissed
+- 🌒 dark mode
 - 🚀 Loading more features soon! 🚧
 
 ## Let me check out the goods 👀
