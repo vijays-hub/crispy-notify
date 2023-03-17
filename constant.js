@@ -26,6 +26,7 @@ const toastTypeColorCodeMap = {
 const DEFAULT_CONFIG = {
   autoClose: 5000,
   canCloseOnClick: true,
+  darkMode: false,
   onClose: () => {},
   position: ACCEPTED_TOAST_POSITIONS["top-right"],
   showProgressBar: true,

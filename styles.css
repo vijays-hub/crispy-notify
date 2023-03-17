@@ -61,7 +61,7 @@
 .toast {
   box-sizing: border-box;
   padding: 0.625rem;
-  background-color: white;
+  background-color: var(--toast_background);
   border-radius: 0.25em;
   box-shadow: 0 0.313rem 1.563rem rgba(0, 0, 0, 0.1);
   position: relative;
@@ -159,14 +159,13 @@
 }
 
 .toast_content .toast_text h4 {
-  margin: 0;
   margin-bottom: 0.125rem;
   font-size: 0.875rem;
   font-family: "Sora", sans-serif;
+  color: var(--toast_title_color);
 }
 
 .toast_content .toast_text p {
-  margin: 0;
   font-size: 0.688rem;
   color: #b0b0b5;
   font-family: "Sono", sans-serif;

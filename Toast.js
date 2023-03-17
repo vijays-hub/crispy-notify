@@ -24,9 +24,19 @@ export default class Toast {
 
   // Ref for options: https://fkhadra.github.io/react-toastify/api/toast/
   constructor(options) {
+    const IS_DARK = options.darkMode || false;
+
     // Brewing up the toast notif element.
     this.#toastElement = document.createElement("div");
     this.#toastElement.classList.add("toast");
+    this.#toastElement.style.setProperty(
+      "--toast_background",
+      IS_DARK ? "black" : "white"
+    );
+    this.#toastElement.style.setProperty(
+      "--toast_title_color",
+      IS_DARK ? "white" : "black"
+    );
 
     this.#toastType = options.toastContent
       ? options.toastContent.type
