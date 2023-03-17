@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.justify-space-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 100rem;
+}
+
+.navbar {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  padding-right: 1.25rem;
+}
+
+.navbar img {
+  height: 6.25rem;
+  width: 12.5rem;
+  object-fit: contain;
+}
+
+.nav_items {
+  width: 15%;
+}
+
+.nav_items a {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
+
+.nav_items a:hover {
+  color: #25c2a0;
+}
+
+.nav_items a:hover::after {
+  content: "•";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.app {
+  width: 100%;
+
+  padding: 1.25rem 0;
+}
