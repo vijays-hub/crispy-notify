@@ -187,6 +187,15 @@ export default class Toast {
       )}.mp3`
     );
 
+    if (
+      navigator.vibrate &&
+      [ACCEPTED_TOAST_TYPES.error, ACCEPTED_TOAST_TYPES.warning].includes(
+        this.#toastType
+      )
+    ) {
+      navigator.vibrate(500);
+    }
+
     notificationSoundEffect.play();
   }
   //   Setters ---> END
