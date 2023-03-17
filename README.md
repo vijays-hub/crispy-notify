@@ -1,6 +1,6 @@
 # Crispy-Notify
 
-A toast notification web app (potentially a library) that's inspired from [React-Toastify](https://github.com/fkhadra/react-toastify). 
+A toast notification web app (potentially a library) that's inspired from [React-Toastify](https://github.com/fkhadra/react-toastify).
 <br>
 <br>
 **👨‍💻 Coded in pure JavaScript 💻**.
@@ -27,7 +27,7 @@ A toast notification web app (potentially a library) that's inspired from [React
 
 ## Documentation
 
-Check the [documentation](https://google.com) to see how you can play with the app.
+👀 Take a look at the [documentation 📚](https://google.com) to see how you can start playing with the app! 🎮
 
 ## License
 
