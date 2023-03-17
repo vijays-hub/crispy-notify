@@ -1,5 +1,3 @@
-2. Add some colors for each toast.
 7. Write clean documentation. Take inspiration from (https://fkhadra.github.io/react-toastify/introduction)
-8. Thank you note for web dev simplified : (https://www.youtube.com/watch?v=HhpbzPMCKDc)
 
 Check all the available props in react toast docs (https://fkhadra.github.io/react-toastify/api/toast/) and implement extra needed ones.
