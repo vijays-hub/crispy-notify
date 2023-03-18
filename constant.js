@@ -34,8 +34,8 @@ const DEFAULT_CONFIG = {
   pauseOnFocusLoss: true,
   playNotificationSound: false,
   toastContent: {
-    message: "Toast title",
-    title: "Toast message",
+    title: "Yay! My first 🍞",
+    message: "This is awesome!!!",
     type: ACCEPTED_TOAST_TYPES.default,
   },
 };
