@@ -23,7 +23,7 @@ A toast notification web app (potentially a library) that's inspired from [React
 
 ## Let me check out the goods 👀
 
-[💪 Get your hands dirty! 💻](https://google.com)
+[💪 Get your hands dirty! 💻](https://crispy-notify.vercel.app/)
 
 ## License
 
