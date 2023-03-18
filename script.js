@@ -1,13 +1,37 @@
 import Toast from "./Toast.js";
 
-document.querySelector("button").addEventListener("click", () => {
-  new Toast({
+const toastForm = document.querySelector("form");
+
+toastForm.addEventListener("submit", (event) => event.preventDefault()); // Prevent form from submitting and refreshing the page
+
+const frameToastObject = () => {
+  const formControls = toastForm.querySelectorAll("input, select, textarea");
+
+  const formValues = {};
+
+  for (const input of formControls) {
+    if (input.type === "submit") continue;
+    if (input.type === "checkbox") formValues[input.name] = input.checked;
+    else if (input.type === "radio") {
+      if (input.checked) formValues[input.name] = input.value;
+    } else formValues[input.name] = input.value;
+  }
+
+  const { disableAutoClose, message, title, type, ...rest } = formValues;
+
+  const toastObject = {
+    ...rest,
+    autoClose: !disableAutoClose && parseFloat(rest.autoClose) * 1000, //convert seconds to ms.
     toastContent: {
-      message: "Info",
-      title: "Something's not right",
-      type: "success",
+      message,
+      title,
+      type,
     },
-    position: "bottom-right",
-    playNotificationSound: true,
-  });
-});
+  };
+
+  return toastObject;
+};
+
+document
+  .querySelector(".submit_btn")
+  .addEventListener("click", () => new Toast(frameToastObject()));
