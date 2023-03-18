@@ -135,8 +135,14 @@
   margin-top: var(--10units);
   padding-left: var(--10units);
   height: var(--40units);
-  border: var(--2units) solid var(--primary-color);
+  border: var(--2units) solid;
   border-radius: 0.5rem;
+  transition: border 200ms ease-in-out;
+}
+
+.toast_title input:hover,
+.toast_delay input:hover {
+  border: var(--2units) solid var(--primary-color);
 }
 
 input:focus,
@@ -149,16 +155,30 @@ textarea:focus {
   box-sizing: border-box;
   padding-top: var(--10units);
   padding-left: var(--10units);
-  border: var(--2units) solid var(--primary-color);
+  border: var(--2units) solid;
   border-radius: 0.5rem;
+  transition: border 200ms ease-in-out;
+}
+
+.toast_message textarea:hover {
+  border: var(--2units) solid var(--primary-color);
 }
 
 .playground_form select {
   height: var(--40units);
-  border: var(--2units) solid var(--primary-color);
+  border: var(--2units) solid;
   border-radius: 0.5rem;
   margin-left: var(--10units);
   padding: 0 var(--10units);
+  transition: border 200ms ease-in-out;
+}
+
+.playground_form select:focus {
+  outline: 0;
+}
+
+.playground_form select:hover {
+  border: var(--2units) solid var(--primary-color);
 }
 
 .submit_btn {
