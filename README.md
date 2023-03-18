@@ -15,7 +15,6 @@ A toast notification web app (potentially a library) that's inspired from [React
 - 🖱️ pause toast on hover
 - ⏳ show a progress bar to display the remaining time
 - 🔊 play a notification sound for different types of toast
-- 🔄 update a toast
 - 🗑️ remove a toast on click.
 - 🔔 Play a notification sound when closing the toast.
 - 🎣 provide an onClose hook to do something once the toast is dismissed
@@ -25,10 +24,6 @@ A toast notification web app (potentially a library) that's inspired from [React
 ## Let me check out the goods 👀
 
 [💪 Get your hands dirty! 💻](https://google.com)
-
-## Documentation
-
-👀 Take a look at the [documentation 📚](https://google.com) to see how you can start playing with the app! 🎮
 
 ## License
 
