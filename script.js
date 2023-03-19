@@ -32,6 +32,9 @@ const frameToastObject = () => {
   return toastObject;
 };
 
-document
-  .querySelector(".submit_btn")
-  .addEventListener("click", () => new Toast(frameToastObject()));
+document.querySelector(".submit_btn").addEventListener("click", () => {
+  const toastConfig = frameToastObject();
+  if (!toastConfig.toastContent.title || !toastConfig.toastContent.message)
+    return;
+  new Toast(toastConfig);
+});

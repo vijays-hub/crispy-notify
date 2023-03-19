@@ -98,7 +98,7 @@ export default class Toast {
   set autoClose(autoClose) {
     this.#visibleSince = 0; // everytime autoClose changes, let's get a fresh visible since value to handle progress bar.
     this.#autoCloseTime = autoClose;
-    if (autoClose === false) return;
+    if (autoClose === false || autoClose === 0) return;
 
     let lastTime;
     const handlePauseResume = (time) => {
